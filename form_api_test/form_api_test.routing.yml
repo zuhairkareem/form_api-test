@@ -1,0 +1,14 @@
+form_api_test.multistep_one:
+  path: '/example-form/step-one'
+  defaults:
+    _form: '\Drupal\form_api_test\Form\Multistep\MultistepOneForm'
+    _title: 'Upload Image'
+  requirements:
+    _permission: 'access content'
+form_api_test.multistep_two:
+  path: '/example-form/step-two'
+  defaults:
+    _form: '\Drupal\form_api_test\Form\Multistep\MultistepTwoForm'
+    _title: 'Add your details'
+  requirements:
+    _permission: 'access content'
